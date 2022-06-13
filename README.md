@@ -130,23 +130,3 @@ All data used in the execution of the automated tests will be in a .json file, s
 | `npx cypress open test:firefox -e TAGS=,zone=,environment=` | Open Cypress test runner to select a test to execute in Firefox browser; is mandatory to inform the 'TAGS', 'zone' and 'environment' you want to run the test |
 
 <p>
-
-## Running the tests for inactive environment (blue/green)
-- If you want to run the tests on the inactive environment, simply add property `bluegreen=inactive` onto your commands. e.g,
-```bash
-npm run test:chrome -- --headed --spec **/loginIam.feature -e TAGS=@AR,zone=AR,environment=PROD,bluegreen=inactive
-```
-- This will set a cookie called `nfatestbg` with a value of 1, which triggers NFA to use the inactive environment.
-- Note: this is only available for environments that have blue/green deployment strategies, which includes UAT, PREPROD, and PROD
-
-#### Combinations to Execution
-
-| TAGS           | Zone                | Environment |
-| -------------- | ------------------- | ----------- |
-| @AR            | AR                  | SIT/UAT     |
-| @BR            | BR                  | SIT/UAT     |
-| @DO            | DO                  | SIT/UAT     |
-| @ZA            | ZA                  | SIT/UAT     |
-| @ARZH          | ARZH                | SIT/UAT     |
-
-###
