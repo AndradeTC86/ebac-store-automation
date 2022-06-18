@@ -2,7 +2,7 @@
 
 # Automation Test Components with Cypress
 
-This is the repository for automation of web projects, developed to work with Cypress.
+This is the repository for automation of Web and API projects, developed to work with Cypress.
 
 ## Table of Contents
 
@@ -27,13 +27,9 @@ This project can be executed in Chrome, Firefox and Edge browsers
 |--- .github
 |----- workflows
 |--- cypress
-|----- downloads
 |----- fixtures
 |----- integration
-|-------- cadastro
-|-------- carrinho
-|-------- checkout
-|-------- produtos
+|-------- login
 |----- plugins
 |-------- index
 |----- support

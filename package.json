@@ -4,7 +4,12 @@
   "description": "Ebac Store Automation",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cy:run"
+    "test": "npm run cy:run",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json  > mochawesome-report/report.json && npx marge mochawesome-report/report.json",
+    "test:allure": "npx cypress run --env allure=true",
+    "allure:open": "npx allure serve"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,7 @@
   "homepage": "https://github.com/AndradeTC86/ebac-store-automation#readme",
   "dependencies": {
     "@faker-js/faker": "^7.2.0",
+    "@shelex/cypress-allure-plugin": "^2.26.5",
     "cypress": "^9.7.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "joi": "^17.6.0",
@@ -25,5 +31,8 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
