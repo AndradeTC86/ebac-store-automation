@@ -36,6 +36,7 @@ This project can be executed in Chrome, Firefox and Edge browsers
 |-------- page_objects
 |-------- commands
 |-------- index
+|--- Jenkinsfile
 |--- cypress.json
 |--- package-lock.json
 |--- package.json
