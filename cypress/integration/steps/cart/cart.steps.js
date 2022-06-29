@@ -14,7 +14,7 @@ When('I add the product to the cart', () => {
 })
 
 And
-('I got to the cart', () => {
+('I go to the cart', () => {
     produtoPage.clicarBotaoCarrinho()
 })
 
