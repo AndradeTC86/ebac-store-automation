@@ -31,6 +31,7 @@ This project can be executed in Chrome, Firefox and Edge browsers
 |----- integration
 |-------- feature
 |-------- steps
+|----------- cart
 |----------- checkout
 |----------- login
 |----- plugins
