@@ -2,7 +2,7 @@ Feature: Login
     Scenario: Successfull Login with Active User
         Given I access the my account page
         When  I input active user "<user>" and pass "<pass>"  
-        Then  I should see a message of success
+        Then  I should see a message of success on login
 
     Scenario: Validation Message in Login with Invalid User
         Given I access the my account page
