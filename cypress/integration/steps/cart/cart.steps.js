@@ -10,7 +10,7 @@ Given('I am at the product page', () => {
 })
 
 When('I add the product to the cart', () => {
-    produtoPage.inserirProduto(produto[2].produto, produto[2].tamanho, produto[2].cor, produto[2].quantidade)
+    produtoPage.inserirProduto(produto[3].produto, produto[3].tamanho, produto[3].cor, produto[3].quantidade)
 })
 
 And
